@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <html lang="en" data-theme="dark">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,7 +15,14 @@
 
   <script src="https://unpkg.com/lucide@latest"></script>
 
- <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
+  <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="Root Energy" />
+  <link rel="manifest" href="assets/favicon/site.webmanifest" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
 
 </head>
 
@@ -30,678 +38,694 @@
           </div>
         </a>
 
-    <nav class="nav-links" aria-label="Primary navigation">
-      <a class="nav-link active" href="#dashboard">Dashboard</a>
-      <a class="nav-link" href="#progress">Progress</a>
-      <a class="nav-link" href="#roadmap">Roadmap</a>
-      <a class="nav-link" href="#kpis">KPIs</a>
-      <a class="nav-link" href="#investment">Investment</a>
-      <a class="nav-link" href="#risk">Risk</a>
-      <a class="nav-link" href="#vision">Vision</a>
-    </nav>
+        <nav class="nav-links" aria-label="Primary navigation">
+          <a class="nav-link active" href="#dashboard">Dashboard</a>
+          <a class="nav-link" href="#progress">Progress</a>
+          <a class="nav-link" href="#roadmap">Roadmap</a>
+          <a class="nav-link" href="#kpis">KPIs</a>
+          <a class="nav-link" href="#investment">Investment</a>
+          <a class="nav-link" href="#risk">Risk</a>
+          <a class="nav-link" href="#vision">Vision</a>
+        </nav>
 
-    <div class="nav-actions">
-      <a class="btn btn-primary" href="#roadmap">
-        <i data-lucide="map"></i>
-        Roadmap
-      </a>
-      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark and light mode">
-        <i data-lucide="sun-moon"></i>
-      </button>
-      <button class="mobile-menu-btn" id="mobileMenuBtn" type="button" aria-label="Open navigation">
-        <i data-lucide="menu"></i>
-      </button>
-    </div>
-  </div>
-</header>
-
-<div class="mobile-drawer" id="mobileDrawer">
-  <a href="#dashboard"><i data-lucide="layout-dashboard"></i> Dashboard</a>
-  <a href="#progress"><i data-lucide="activity"></i> Progress Overview</a>
-  <a href="#roadmap"><i data-lucide="git-branch"></i> Roadmap Timeline</a>
-  <a href="#milestones"><i data-lucide="flag"></i> Milestones</a>
-  <a href="#kpis"><i data-lucide="bar-chart-3"></i> KPI Dashboard</a>
-  <a href="#investment"><i data-lucide="indian-rupee"></i> Investment Tracker</a>
-  <a href="#risk"><i data-lucide="shield-alert"></i> Risk Tracker</a>
-  <a href="#resources"><i data-lucide="users"></i> Resource Planning</a>
-  <a href="#vision"><i data-lucide="telescope"></i> Future Vision</a>
-</div>
-
-<main>
-  <section class="hero" id="home">
-    <div class="container hero-grid">
-      <div class="hero-copy reveal">
-        <div class="hero-inner">
-          <div class="eyebrow">
-            <i data-lucide="zap"></i>
-            Master Operating System
-          </div>
-
-          <h1>
-            UNDERR∞T ENERGY
-            <span class="gradient-text">MASTER ROADMAP</span>
-          </h1>
-
-          <p class="hero-subtitle">
-            A premium strategic roadmap dashboard for transforming UnderR∞t Energy Pvt. Ltd. from an offline solar & EPC company into one of India’s most trusted renewable energy brands.
-          </p>
-
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#dashboard">
-              <i data-lucide="rocket"></i>
-              Open Executive Dashboard
-            </a>
-            <a class="btn btn-green" href="#roadmap">
-              <i data-lucide="route"></i>
-              Explore 18 Phases
-            </a>
-            <a class="btn" href="#vision">
-              <i data-lucide="sparkles"></i>
-              National Brand Vision
-            </a>
-          </div>
-        </div>
-
-        <div class="hero-metrics">
-          <div class="mini-stat">
-            <strong>18</strong>
-            <span>Strategic Roadmap Phases</span>
-          </div>
-          <div class="mini-stat">
-            <strong>5Y</strong>
-            <span>National Brand Transformation Horizon</span>
-          </div>
-          <div class="mini-stat">
-            <strong>100+</strong>
-            <span>Local Pages, Reviews & Articles Targets</span>
-          </div>
-          <div class="mini-stat">
-            <strong>∞</strong>
-            <span>Renewable Growth Operating System</span>
-          </div>
-        </div>
-      </div>
-
-      <aside class="command-card reveal">
-        <div class="command-inner">
-          <div class="orbital">
-            <div class="orbit-ring one"></div>
-            <div class="orbit-ring two"></div>
-            <div class="orbit-ring three"></div>
-            <span class="orbit-dot a"></span>
-            <span class="orbit-dot green b"></span>
-            <span class="orbit-dot c"></span>
-            <div class="sun-core">
-              <i data-lucide="sun" size="42"></i>
-            </div>
-          </div>
-
-          <div class="command-row">
-            <div class="command-tile">
-              <div class="label">Current Strategic Stage</div>
-              <div class="value">Launch Mode</div>
-            </div>
-            <div class="command-tile">
-              <div class="label">Primary Growth Engine</div>
-              <div class="value">SEO + Leads</div>
-            </div>
-          </div>
-
-          <div class="command-row">
-            <div class="command-tile">
-              <div class="label">Brand Direction</div>
-              <div class="value">National</div>
-            </div>
-            <div class="command-tile">
-              <div class="label">Operating Priority</div>
-              <div class="value">Digital Scale</div>
-            </div>
-          </div>
-
-          <div class="health-card">
-            <div class="health-top">
-              <strong>Roadmap Health</strong>
-              <span class="pulse">ON TRACK</span>
-            </div>
-            <div class="progress-track">
-              <div class="progress-fill" style="--progress: 18%;"></div>
-            </div>
-          </div>
-        </div>
-      </aside>
-    </div>
-  </section>
-
-  <section class="section" id="dashboard">
-    <div class="container">
-      <div class="section-header reveal">
-        <div>
-          <div class="section-kicker">
-            <i data-lucide="layout-dashboard"></i>
-            Executive Dashboard
-          </div>
-          <h2 class="section-title">Single source of truth for brand, growth, leads, SEO, reputation, content, and national expansion.</h2>
-          <p class="section-desc">
-            Designed as a boardroom-ready strategic control center for monitoring transformation from foundation to national brand status.
-          </p>
-        </div>
-        <div class="section-actions">
-          <button class="btn" id="expandAllBtn" type="button">
-            <i data-lucide="maximize-2"></i>
-            Expand All
+        <div class="nav-actions">
+          <a class="btn btn-primary" href="#roadmap">
+            <i data-lucide="map"></i>
+            Roadmap
+          </a>
+          <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark and light mode">
+            <i data-lucide="sun-moon"></i>
           </button>
-          <button class="btn" id="collapseAllBtn" type="button">
-            <i data-lucide="minimize-2"></i>
-            Collapse All
+          <button class="mobile-menu-btn" id="mobileMenuBtn" type="button" aria-label="Open navigation">
+            <i data-lucide="menu"></i>
           </button>
         </div>
       </div>
+    </header>
 
-      <div class="grid grid-4 reveal">
-        <div class="card card-pad metric-card">
-          <div class="metric-top">
-            <div>
-              <div class="metric-label">Overall Completion</div>
-              <div class="metric-value" id="overallCompletion">18%</div>
-            </div>
-            <div class="metric-icon"><i data-lucide="activity"></i></div>
-          </div>
-          <div>
-            <div class="progress-track">
-              <div class="progress-fill" style="--progress: 18%;"></div>
-            </div>
-            <div class="metric-note"><i data-lucide="trending-up"></i> Foundation completed, public launch next</div>
-          </div>
-        </div>
-
-        <div class="card card-pad metric-card">
-          <div class="metric-top">
-            <div>
-              <div class="metric-label">Completed Foundation Assets</div>
-              <div class="metric-value">9/9</div>
-            </div>
-            <div class="metric-icon"><i data-lucide="badge-check"></i></div>
-          </div>
-          <div class="metric-note"><i data-lucide="check-circle-2"></i> Logo, domain, VPS, SSL, GitHub ready</div>
-        </div>
-
-        <div class="card card-pad metric-card">
-          <div class="metric-top">
-            <div>
-              <div class="metric-label">Planned Growth Assets</div>
-              <div class="metric-value">500+</div>
-            </div>
-            <div class="metric-icon"><i data-lucide="layers-3"></i></div>
-          </div>
-          <div class="metric-note"><i data-lucide="globe-2"></i> Programmatic SEO and city-scale pages</div>
-        </div>
-
-        <div class="card card-pad metric-card">
-          <div class="metric-top">
-            <div>
-              <div class="metric-label">North Star Goal</div>
-              <div class="metric-value">Top Brand</div>
-            </div>
-            <div class="metric-icon"><i data-lucide="crown"></i></div>
-          </div>
-          <div class="metric-note"><i data-lucide="star"></i> Trusted renewable energy brand in India</div>
-        </div>
-      </div>
-
-      <div class="dashboard-layout reveal" style="margin-top: 16px;">
-        <div class="card chart-card">
-          <div class="card-title-row">
-            <div>
-              <div class="card-title">Strategic Phase Distribution</div>
-              <div class="card-subtitle">Roadmap stages across digital identity, SEO, content, leads, authority, automation, team, and national brand growth.</div>
-            </div>
-            <span class="badge active"><i data-lucide="radar"></i> Live View</span>
-          </div>
-          <div class="chart-wrap">
-            <canvas id="phaseChart"></canvas>
-          </div>
-        </div>
-
-        <div class="card chart-card">
-          <div class="card-title-row">
-            <div>
-              <div class="card-title">Operating Readiness</div>
-              <div class="card-subtitle">Executive view of the major operating pillars required for scale.</div>
-            </div>
-          </div>
-          <div class="chart-wrap">
-            <canvas id="readinessChart"></canvas>
-          </div>
-        </div>
-      </div>
+    <div class="mobile-drawer" id="mobileDrawer">
+      <a href="#dashboard"><i data-lucide="layout-dashboard"></i> Dashboard</a>
+      <a href="#progress"><i data-lucide="activity"></i> Progress Overview</a>
+      <a href="#roadmap"><i data-lucide="git-branch"></i> Roadmap Timeline</a>
+      <a href="#milestones"><i data-lucide="flag"></i> Milestones</a>
+      <a href="#kpis"><i data-lucide="bar-chart-3"></i> KPI Dashboard</a>
+      <a href="#investment"><i data-lucide="indian-rupee"></i> Investment Tracker</a>
+      <a href="#risk"><i data-lucide="shield-alert"></i> Risk Tracker</a>
+      <a href="#resources"><i data-lucide="users"></i> Resource Planning</a>
+      <a href="#vision"><i data-lucide="telescope"></i> Future Vision</a>
     </div>
-  </section>
 
-  <section class="section" id="progress">
-    <div class="container">
-      <div class="section-header reveal">
-        <div>
-          <div class="section-kicker">
-            <i data-lucide="gauge"></i>
-            Progress Overview
-          </div>
-          <h2 class="section-title">Transformation progress across five strategic time horizons.</h2>
-          <p class="section-desc">
-            The dashboard tracks the full path from foundation and digital launch to national SEO, marketing automation, team expansion, and market recognition.
-          </p>
-        </div>
-      </div>
+    <main>
+      <section class="hero" id="home">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <div class="hero-inner">
+              <div class="eyebrow">
+                <i data-lucide="zap"></i>
+                Master Operating System
+              </div>
 
-      <div class="progress-overview reveal">
-        <div class="card completion-panel">
-          <div class="card-title-row">
-            <div>
-              <div class="card-title">Roadmap Completion Score</div>
-              <div class="card-subtitle">Weighted by current phase progress and implementation maturity.</div>
+              <h1>
+                UNDERR∞T ENERGY
+                <span class="gradient-text">MASTER ROADMAP</span>
+              </h1>
+
+              <p class="hero-subtitle">
+                A premium strategic roadmap dashboard for transforming UnderR∞t Energy Pvt. Ltd. from an offline solar &
+                EPC company into one of India’s most trusted renewable energy brands.
+              </p>
+
+              <div class="hero-actions">
+                <a class="btn btn-primary" href="#dashboard">
+                  <i data-lucide="rocket"></i>
+                  Open Executive Dashboard
+                </a>
+                <a class="btn btn-green" href="#roadmap">
+                  <i data-lucide="route"></i>
+                  Explore 18 Phases
+                </a>
+                <a class="btn" href="#vision">
+                  <i data-lucide="sparkles"></i>
+                  National Brand Vision
+                </a>
+              </div>
+            </div>
+
+            <div class="hero-metrics">
+              <div class="mini-stat">
+                <strong>18</strong>
+                <span>Strategic Roadmap Phases</span>
+              </div>
+              <div class="mini-stat">
+                <strong>5Y</strong>
+                <span>National Brand Transformation Horizon</span>
+              </div>
+              <div class="mini-stat">
+                <strong>100+</strong>
+                <span>Local Pages, Reviews & Articles Targets</span>
+              </div>
+              <div class="mini-stat">
+                <strong>∞</strong>
+                <span>Renewable Growth Operating System</span>
+              </div>
             </div>
           </div>
-          <div class="completion-score">
-            <div class="score-ring" style="--score: 18;">
-              <div class="score-center">
-                <strong>18%</strong>
-                <span>Complete</span>
+
+          <aside class="command-card reveal">
+            <div class="command-inner">
+              <div class="orbital">
+                <div class="orbit-ring one"></div>
+                <div class="orbit-ring two"></div>
+                <div class="orbit-ring three"></div>
+                <span class="orbit-dot a"></span>
+                <span class="orbit-dot green b"></span>
+                <span class="orbit-dot c"></span>
+                <div class="sun-core">
+                  <i data-lucide="sun" size="42"></i>
+                </div>
+              </div>
+
+              <div class="command-row">
+                <div class="command-tile">
+                  <div class="label">Current Strategic Stage</div>
+                  <div class="value">Launch Mode</div>
+                </div>
+                <div class="command-tile">
+                  <div class="label">Primary Growth Engine</div>
+                  <div class="value">SEO + Leads</div>
+                </div>
+              </div>
+
+              <div class="command-row">
+                <div class="command-tile">
+                  <div class="label">Brand Direction</div>
+                  <div class="value">National</div>
+                </div>
+                <div class="command-tile">
+                  <div class="label">Operating Priority</div>
+                  <div class="value">Digital Scale</div>
+                </div>
+              </div>
+
+              <div class="health-card">
+                <div class="health-top">
+                  <strong>Roadmap Health</strong>
+                  <span class="pulse">ON TRACK</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-fill" style="--progress: 18%;"></div>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section" id="dashboard">
+        <div class="container">
+          <div class="section-header reveal">
+            <div>
+              <div class="section-kicker">
+                <i data-lucide="layout-dashboard"></i>
+                Executive Dashboard
+              </div>
+              <h2 class="section-title">Single source of truth for brand, growth, leads, SEO, reputation, content, and
+                national expansion.</h2>
+              <p class="section-desc">
+                Designed as a boardroom-ready strategic control center for monitoring transformation from foundation to
+                national brand status.
+              </p>
+            </div>
+            <div class="section-actions">
+              <button class="btn" id="expandAllBtn" type="button">
+                <i data-lucide="maximize-2"></i>
+                Expand All
+              </button>
+              <button class="btn" id="collapseAllBtn" type="button">
+                <i data-lucide="minimize-2"></i>
+                Collapse All
+              </button>
+            </div>
+          </div>
+
+          <div class="grid grid-4 reveal">
+            <div class="card card-pad metric-card">
+              <div class="metric-top">
+                <div>
+                  <div class="metric-label">Overall Completion</div>
+                  <div class="metric-value" id="overallCompletion">18%</div>
+                </div>
+                <div class="metric-icon"><i data-lucide="activity"></i></div>
+              </div>
+              <div>
+                <div class="progress-track">
+                  <div class="progress-fill" style="--progress: 18%;"></div>
+                </div>
+                <div class="metric-note"><i data-lucide="trending-up"></i> Foundation completed, public launch next
+                </div>
+              </div>
+            </div>
+
+            <div class="card card-pad metric-card">
+              <div class="metric-top">
+                <div>
+                  <div class="metric-label">Completed Foundation Assets</div>
+                  <div class="metric-value">9/9</div>
+                </div>
+                <div class="metric-icon"><i data-lucide="badge-check"></i></div>
+              </div>
+              <div class="metric-note"><i data-lucide="check-circle-2"></i> Logo, domain, VPS, SSL, GitHub ready</div>
+            </div>
+
+            <div class="card card-pad metric-card">
+              <div class="metric-top">
+                <div>
+                  <div class="metric-label">Planned Growth Assets</div>
+                  <div class="metric-value">500+</div>
+                </div>
+                <div class="metric-icon"><i data-lucide="layers-3"></i></div>
+              </div>
+              <div class="metric-note"><i data-lucide="globe-2"></i> Programmatic SEO and city-scale pages</div>
+            </div>
+
+            <div class="card card-pad metric-card">
+              <div class="metric-top">
+                <div>
+                  <div class="metric-label">North Star Goal</div>
+                  <div class="metric-value">Top Brand</div>
+                </div>
+                <div class="metric-icon"><i data-lucide="crown"></i></div>
+              </div>
+              <div class="metric-note"><i data-lucide="star"></i> Trusted renewable energy brand in India</div>
+            </div>
+          </div>
+
+          <div class="dashboard-layout reveal" style="margin-top: 16px;">
+            <div class="card chart-card">
+              <div class="card-title-row">
+                <div>
+                  <div class="card-title">Strategic Phase Distribution</div>
+                  <div class="card-subtitle">Roadmap stages across digital identity, SEO, content, leads, authority,
+                    automation, team, and national brand growth.</div>
+                </div>
+                <span class="badge active"><i data-lucide="radar"></i> Live View</span>
+              </div>
+              <div class="chart-wrap">
+                <canvas id="phaseChart"></canvas>
+              </div>
+            </div>
+
+            <div class="card chart-card">
+              <div class="card-title-row">
+                <div>
+                  <div class="card-title">Operating Readiness</div>
+                  <div class="card-subtitle">Executive view of the major operating pillars required for scale.</div>
+                </div>
+              </div>
+              <div class="chart-wrap">
+                <canvas id="readinessChart"></canvas>
               </div>
             </div>
           </div>
         </div>
+      </section>
 
-        <div class="card card-pad">
-          <div class="card-title-row">
+      <section class="section" id="progress">
+        <div class="container">
+          <div class="section-header reveal">
             <div>
-              <div class="card-title">Timeline Group Progress</div>
-              <div class="card-subtitle">From launch operations to national brand scale.</div>
+              <div class="section-kicker">
+                <i data-lucide="gauge"></i>
+                Progress Overview
+              </div>
+              <h2 class="section-title">Transformation progress across five strategic time horizons.</h2>
+              <p class="section-desc">
+                The dashboard tracks the full path from foundation and digital launch to national SEO, marketing
+                automation, team expansion, and market recognition.
+              </p>
             </div>
           </div>
 
-          <div class="stage-bars" id="stageBars"></div>
-        </div>
-      </div>
-    </div>
-  </section>
+          <div class="progress-overview reveal">
+            <div class="card completion-panel">
+              <div class="card-title-row">
+                <div>
+                  <div class="card-title">Roadmap Completion Score</div>
+                  <div class="card-subtitle">Weighted by current phase progress and implementation maturity.</div>
+                </div>
+              </div>
+              <div class="completion-score">
+                <div class="score-ring" style="--score: 18;">
+                  <div class="score-center">
+                    <strong>18%</strong>
+                    <span>Complete</span>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-  <section class="section" id="timeline">
-    <div class="container">
-      <div class="section-header reveal">
-        <div>
-          <div class="section-kicker">
-            <i data-lucide="calendar-range"></i>
-            Timeline Visualization
-          </div>
-          <h2 class="section-title">Five-year renewable energy brand transformation map.</h2>
-        </div>
-      </div>
+            <div class="card card-pad">
+              <div class="card-title-row">
+                <div>
+                  <div class="card-title">Timeline Group Progress</div>
+                  <div class="card-subtitle">From launch operations to national brand scale.</div>
+                </div>
+              </div>
 
-      <div class="timeline-visual reveal" id="timelineVisual"></div>
-    </div>
-  </section>
-
-  <section class="section" id="roadmap">
-    <div class="container">
-      <div class="section-header reveal">
-        <div>
-          <div class="section-kicker">
-            <i data-lucide="git-branch"></i>
-            Interactive Roadmap Timeline
-          </div>
-          <h2 class="section-title">18 expandable phase cards with goals, tasks, KPIs, investment, status, and risk visibility.</h2>
-          <p class="section-desc">
-            Filter by status, timeline group, strategic category, or search by keyword. Open any phase to view execution details.
-          </p>
-        </div>
-      </div>
-
-      <div class="filters-shell reveal">
-        <div class="filters">
-          <div class="field">
-            <i data-lucide="search"></i>
-            <input class="input" id="searchInput" type="search" placeholder="Search phases, tasks, KPIs, goals..." />
-          </div>
-
-          <div class="field select-wrap">
-            <select class="select" id="statusFilter" aria-label="Filter by status">
-              <option value="all">All Statuses</option>
-              <option value="completed">Completed</option>
-              <option value="active">Active</option>
-              <option value="planned">Planned</option>
-              <option value="future">Future</option>
-            </select>
-          </div>
-
-          <div class="field select-wrap">
-            <select class="select" id="timelineFilter" aria-label="Filter by timeline">
-              <option value="all">All Timelines</option>
-              <option value="0–3 Months">0–3 Months</option>
-              <option value="3–6 Months">3–6 Months</option>
-              <option value="6–12 Months">6–12 Months</option>
-              <option value="1–2 Years">1–2 Years</option>
-              <option value="2–5 Years">2–5 Years</option>
-            </select>
-          </div>
-
-          <div class="field select-wrap">
-            <select class="select" id="categoryFilter" aria-label="Filter by category">
-              <option value="all">All Categories</option>
-              <option value="Foundation">Foundation</option>
-              <option value="Digital">Digital Identity</option>
-              <option value="Website">Website</option>
-              <option value="Analytics">Analytics</option>
-              <option value="SEO">SEO</option>
-              <option value="Content">Content</option>
-              <option value="Social">Social</option>
-              <option value="Reputation">Reputation</option>
-              <option value="Leads">Lead Generation</option>
-              <option value="Authority">Authority</option>
-              <option value="Automation">Automation</option>
-              <option value="Team">Team</option>
-              <option value="Brand">Brand</option>
-            </select>
-          </div>
-
-          <button class="btn" id="resetFiltersBtn" type="button">
-            <i data-lucide="rotate-ccw"></i>
-            Reset Filters
-          </button>
-        </div>
-      </div>
-
-      <div class="timeline-grid">
-        <aside class="timeline-sidebar reveal" id="timelineSidebar"></aside>
-
-        <div>
-          <div class="roadmap-list reveal" id="roadmapList"></div>
-          <div class="empty-state" id="emptyState">
-            <i data-lucide="search-x" style="width: 42px; height: 42px; margin-bottom: 12px;"></i>
-            <h3>No matching phases found</h3>
-            <p>Adjust filters or search terms to explore the roadmap.</p>
+              <div class="stage-bars" id="stageBars"></div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
+      </section>
 
-  <section class="section" id="milestones">
-    <div class="container">
-      <div class="section-header reveal">
-        <div>
-          <div class="section-kicker">
-            <i data-lucide="flag"></i>
-            Milestone Tracking
-          </div>
-          <h2 class="section-title">Execution board for the most important transformation milestones.</h2>
-        </div>
-      </div>
-
-      <div class="milestone-board reveal" id="milestoneBoard"></div>
-    </div>
-  </section>
-
-  <section class="section" id="kpis">
-    <div class="container">
-      <div class="section-header reveal">
-        <div>
-          <div class="section-kicker">
-            <i data-lucide="bar-chart-3"></i>
-            KPI Dashboard
-          </div>
-          <h2 class="section-title">Business, digital, SEO, reputation, and lead-generation metrics that define success.</h2>
-        </div>
-      </div>
-
-      <div class="kpi-grid reveal">
-        <div class="card card-pad">
-          <div class="card-title-row">
+      <section class="section" id="timeline">
+        <div class="container">
+          <div class="section-header reveal">
             <div>
-              <div class="card-title">Strategic KPI Register</div>
-              <div class="card-subtitle">Targets aligned to roadmap stages and national brand growth.</div>
+              <div class="section-kicker">
+                <i data-lucide="calendar-range"></i>
+                Timeline Visualization
+              </div>
+              <h2 class="section-title">Five-year renewable energy brand transformation map.</h2>
             </div>
           </div>
 
-          <div style="overflow-x: auto;">
-            <table class="kpi-table">
-              <thead>
-                <tr>
-                  <th>KPI</th>
-                  <th>Target</th>
-                  <th>Priority</th>
-                  <th>Progress</th>
-                </tr>
-              </thead>
-              <tbody id="kpiTableBody"></tbody>
-            </table>
-          </div>
+          <div class="timeline-visual reveal" id="timelineVisual"></div>
         </div>
+      </section>
 
-        <div class="card chart-card">
-          <div class="card-title-row">
+      <section class="section" id="roadmap">
+        <div class="container">
+          <div class="section-header reveal">
             <div>
-              <div class="card-title">KPI Momentum Forecast</div>
-              <div class="card-subtitle">Expected growth maturity across roadmap horizons.</div>
+              <div class="section-kicker">
+                <i data-lucide="git-branch"></i>
+                Interactive Roadmap Timeline
+              </div>
+              <h2 class="section-title">18 expandable phase cards with goals, tasks, KPIs, investment, status, and risk
+                visibility.</h2>
+              <p class="section-desc">
+                Filter by status, timeline group, strategic category, or search by keyword. Open any phase to view
+                execution details.
+              </p>
             </div>
           </div>
-          <div class="chart-wrap">
-            <canvas id="kpiChart"></canvas>
+
+          <div class="filters-shell reveal">
+            <div class="filters">
+              <div class="field">
+                <i data-lucide="search"></i>
+                <input class="input" id="searchInput" type="search"
+                  placeholder="Search phases, tasks, KPIs, goals..." />
+              </div>
+
+              <div class="field select-wrap">
+                <select class="select" id="statusFilter" aria-label="Filter by status">
+                  <option value="all">All Statuses</option>
+                  <option value="completed">Completed</option>
+                  <option value="active">Active</option>
+                  <option value="planned">Planned</option>
+                  <option value="future">Future</option>
+                </select>
+              </div>
+
+              <div class="field select-wrap">
+                <select class="select" id="timelineFilter" aria-label="Filter by timeline">
+                  <option value="all">All Timelines</option>
+                  <option value="0–3 Months">0–3 Months</option>
+                  <option value="3–6 Months">3–6 Months</option>
+                  <option value="6–12 Months">6–12 Months</option>
+                  <option value="1–2 Years">1–2 Years</option>
+                  <option value="2–5 Years">2–5 Years</option>
+                </select>
+              </div>
+
+              <div class="field select-wrap">
+                <select class="select" id="categoryFilter" aria-label="Filter by category">
+                  <option value="all">All Categories</option>
+                  <option value="Foundation">Foundation</option>
+                  <option value="Digital">Digital Identity</option>
+                  <option value="Website">Website</option>
+                  <option value="Analytics">Analytics</option>
+                  <option value="SEO">SEO</option>
+                  <option value="Content">Content</option>
+                  <option value="Social">Social</option>
+                  <option value="Reputation">Reputation</option>
+                  <option value="Leads">Lead Generation</option>
+                  <option value="Authority">Authority</option>
+                  <option value="Automation">Automation</option>
+                  <option value="Team">Team</option>
+                  <option value="Brand">Brand</option>
+                </select>
+              </div>
+
+              <button class="btn" id="resetFiltersBtn" type="button">
+                <i data-lucide="rotate-ccw"></i>
+                Reset Filters
+              </button>
+            </div>
+          </div>
+
+          <div class="timeline-grid">
+            <aside class="timeline-sidebar reveal" id="timelineSidebar"></aside>
+
+            <div>
+              <div class="roadmap-list reveal" id="roadmapList"></div>
+              <div class="empty-state" id="emptyState">
+                <i data-lucide="search-x" style="width: 42px; height: 42px; margin-bottom: 12px;"></i>
+                <h3>No matching phases found</h3>
+                <p>Adjust filters or search terms to explore the roadmap.</p>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
+      </section>
 
-  <section class="section" id="investment">
-    <div class="container">
-      <div class="section-header reveal">
+      <section class="section" id="milestones">
+        <div class="container">
+          <div class="section-header reveal">
+            <div>
+              <div class="section-kicker">
+                <i data-lucide="flag"></i>
+                Milestone Tracking
+              </div>
+              <h2 class="section-title">Execution board for the most important transformation milestones.</h2>
+            </div>
+          </div>
+
+          <div class="milestone-board reveal" id="milestoneBoard"></div>
+        </div>
+      </section>
+
+      <section class="section" id="kpis">
+        <div class="container">
+          <div class="section-header reveal">
+            <div>
+              <div class="section-kicker">
+                <i data-lucide="bar-chart-3"></i>
+                KPI Dashboard
+              </div>
+              <h2 class="section-title">Business, digital, SEO, reputation, and lead-generation metrics that define
+                success.</h2>
+            </div>
+          </div>
+
+          <div class="kpi-grid reveal">
+            <div class="card card-pad">
+              <div class="card-title-row">
+                <div>
+                  <div class="card-title">Strategic KPI Register</div>
+                  <div class="card-subtitle">Targets aligned to roadmap stages and national brand growth.</div>
+                </div>
+              </div>
+
+              <div style="overflow-x: auto;">
+                <table class="kpi-table">
+                  <thead>
+                    <tr>
+                      <th>KPI</th>
+                      <th>Target</th>
+                      <th>Priority</th>
+                      <th>Progress</th>
+                    </tr>
+                  </thead>
+                  <tbody id="kpiTableBody"></tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="card chart-card">
+              <div class="card-title-row">
+                <div>
+                  <div class="card-title">KPI Momentum Forecast</div>
+                  <div class="card-subtitle">Expected growth maturity across roadmap horizons.</div>
+                </div>
+              </div>
+              <div class="chart-wrap">
+                <canvas id="kpiChart"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="investment">
+        <div class="container">
+          <div class="section-header reveal">
+            <div>
+              <div class="section-kicker">
+                <i data-lucide="indian-rupee"></i>
+                Investment Tracker
+              </div>
+              <h2 class="section-title">Lean, staged investment plan for digital launch, SEO dominance, content scale,
+                and automation.</h2>
+            </div>
+          </div>
+
+          <div class="investment-layout reveal">
+            <div class="card chart-card">
+              <div class="card-title-row">
+                <div>
+                  <div class="card-title">Investment by Roadmap Horizon</div>
+                  <div class="card-subtitle">Indicative spend envelope for each transformation stage.</div>
+                </div>
+              </div>
+              <div class="chart-wrap">
+                <canvas id="investmentChart"></canvas>
+              </div>
+            </div>
+
+            <div class="card card-pad">
+              <div class="card-title-row">
+                <div>
+                  <div class="card-title">Investment Workstreams</div>
+                  <div class="card-subtitle">Budget areas that compound into brand visibility and qualified demand.
+                  </div>
+                </div>
+              </div>
+              <div class="investment-list" id="investmentList"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="risk">
+        <div class="container">
+          <div class="section-header reveal">
+            <div>
+              <div class="section-kicker">
+                <i data-lucide="shield-alert"></i>
+                Risk Tracker
+              </div>
+              <h2 class="section-title">Operational risks, mitigation priorities, and executive watchpoints.</h2>
+            </div>
+          </div>
+
+          <div class="grid grid-2 reveal">
+            <div class="card card-pad">
+              <div class="card-title-row">
+                <div>
+                  <div class="card-title">Risk Matrix</div>
+                  <div class="card-subtitle">Current roadmap risk posture across execution, content, SEO, and lead
+                    capture.</div>
+                </div>
+              </div>
+              <div class="risk-matrix">
+                <div class="risk-score">
+                  <span>Execution Risk</span>
+                  <strong>Medium</strong>
+                  <span>Needs weekly governance</span>
+                </div>
+                <div class="risk-score">
+                  <span>Brand Risk</span>
+                  <strong>Low</strong>
+                  <span>Foundation assets ready</span>
+                </div>
+                <div class="risk-score">
+                  <span>Scale Risk</span>
+                  <strong>High</strong>
+                  <span>Team expansion required</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="card card-pad">
+              <div class="card-title-row">
+                <div>
+                  <div class="card-title">Priority Risks</div>
+                  <div class="card-subtitle">Track, mitigate, and review during roadmap governance.</div>
+                </div>
+              </div>
+              <div class="risk-list" id="riskList"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="success">
+        <div class="container">
+          <div class="section-header reveal">
+            <div>
+              <div class="section-kicker">
+                <i data-lucide="trophy"></i>
+                Success Metrics
+              </div>
+              <h2 class="section-title">What winning looks like for UnderR∞t Energy.</h2>
+            </div>
+          </div>
+
+          <div class="grid grid-3 reveal" id="successGrid"></div>
+        </div>
+      </section>
+
+      <section class="section" id="resources">
+        <div class="container">
+          <div class="section-header reveal">
+            <div>
+              <div class="section-kicker">
+                <i data-lucide="users"></i>
+                Resource Planning
+              </div>
+              <h2 class="section-title">Future team and operating model for scale.</h2>
+              <p class="section-desc">
+                Team expansion should align with content velocity, SEO scale, video production, paid performance, and
+                lead management maturity.
+              </p>
+            </div>
+          </div>
+
+          <div class="resource-grid reveal">
+            <div class="card card-pad">
+              <div class="card-title-row">
+                <div>
+                  <div class="card-title">Future Roles</div>
+                  <div class="card-subtitle">Recommended hiring stack for Year 2–5 expansion.</div>
+                </div>
+              </div>
+              <div class="role-stack" id="roleStack"></div>
+            </div>
+
+            <div class="card card-pad">
+              <div class="card-title-row">
+                <div>
+                  <div class="card-title">Operating Cadence</div>
+                  <div class="card-subtitle">Governance rhythm to keep execution moving.</div>
+                </div>
+              </div>
+              <div class="resource-list" id="resourceList"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="vision">
+        <div class="container">
+          <div class="vision-panel reveal">
+            <div class="vision-grid">
+              <div class="vision-copy">
+                <div class="section-kicker">
+                  <i data-lucide="telescope"></i>
+                  Future Vision
+                </div>
+                <h2>National Brand Status for Renewable Energy Solutions.</h2>
+                <p>
+                  When people search for Solar EPC, Solar Installation, EV Charging Infrastructure, and Renewable Energy
+                  Solutions, UnderR∞t Energy appears as a recognized, trusted, and nationally visible brand.
+                </p>
+                <div class="hero-actions" style="margin-top: 26px; margin-bottom: 0;">
+                  <a class="btn btn-primary" href="#roadmap">
+                    <i data-lucide="arrow-up-right"></i>
+                    Execute the Roadmap
+                  </a>
+                  <a class="btn" href="#kpis">
+                    <i data-lucide="target"></i>
+                    Track Success
+                  </a>
+                </div>
+              </div>
+
+              <div class="vision-pill-grid">
+                <div class="vision-pill">
+                  <i data-lucide="search-check"></i>
+                  <strong>Strong Organic Traffic</strong>
+                </div>
+                <div class="vision-pill">
+                  <i data-lucide="handshake"></i>
+                  <strong>Consistent Qualified Leads</strong>
+                </div>
+                <div class="vision-pill">
+                  <i data-lucide="landmark"></i>
+                  <strong>Government Project Presence</strong>
+                </div>
+                <div class="vision-pill">
+                  <i data-lucide="award"></i>
+                  <strong>Industry Recognition</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="floating-actions">
+      <button class="float-btn" id="scrollTopBtn" type="button" aria-label="Scroll to top">
+        <i data-lucide="arrow-up"></i>
+      </button>
+    </div>
+
+    <footer class="footer">
+      <div class="container footer-inner">
         <div>
-          <div class="section-kicker">
-            <i data-lucide="indian-rupee"></i>
-            Investment Tracker
-          </div>
-          <h2 class="section-title">Lean, staged investment plan for digital launch, SEO dominance, content scale, and automation.</h2>
+          <strong>UnderR∞t Energy Pvt. Ltd.</strong> — Infinite Energy. Sustainable Future.
         </div>
+        <div>Master Roadmap Dashboard · Strategic Growth OS</div>
       </div>
-
-      <div class="investment-layout reveal">
-        <div class="card chart-card">
-          <div class="card-title-row">
-            <div>
-              <div class="card-title">Investment by Roadmap Horizon</div>
-              <div class="card-subtitle">Indicative spend envelope for each transformation stage.</div>
-            </div>
-          </div>
-          <div class="chart-wrap">
-            <canvas id="investmentChart"></canvas>
-          </div>
-        </div>
-
-        <div class="card card-pad">
-          <div class="card-title-row">
-            <div>
-              <div class="card-title">Investment Workstreams</div>
-              <div class="card-subtitle">Budget areas that compound into brand visibility and qualified demand.</div>
-            </div>
-          </div>
-          <div class="investment-list" id="investmentList"></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="risk">
-    <div class="container">
-      <div class="section-header reveal">
-        <div>
-          <div class="section-kicker">
-            <i data-lucide="shield-alert"></i>
-            Risk Tracker
-          </div>
-          <h2 class="section-title">Operational risks, mitigation priorities, and executive watchpoints.</h2>
-        </div>
-      </div>
-
-      <div class="grid grid-2 reveal">
-        <div class="card card-pad">
-          <div class="card-title-row">
-            <div>
-              <div class="card-title">Risk Matrix</div>
-              <div class="card-subtitle">Current roadmap risk posture across execution, content, SEO, and lead capture.</div>
-            </div>
-          </div>
-          <div class="risk-matrix">
-            <div class="risk-score">
-              <span>Execution Risk</span>
-              <strong>Medium</strong>
-              <span>Needs weekly governance</span>
-            </div>
-            <div class="risk-score">
-              <span>Brand Risk</span>
-              <strong>Low</strong>
-              <span>Foundation assets ready</span>
-            </div>
-            <div class="risk-score">
-              <span>Scale Risk</span>
-              <strong>High</strong>
-              <span>Team expansion required</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="card card-pad">
-          <div class="card-title-row">
-            <div>
-              <div class="card-title">Priority Risks</div>
-              <div class="card-subtitle">Track, mitigate, and review during roadmap governance.</div>
-            </div>
-          </div>
-          <div class="risk-list" id="riskList"></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="success">
-    <div class="container">
-      <div class="section-header reveal">
-        <div>
-          <div class="section-kicker">
-            <i data-lucide="trophy"></i>
-            Success Metrics
-          </div>
-          <h2 class="section-title">What winning looks like for UnderR∞t Energy.</h2>
-        </div>
-      </div>
-
-      <div class="grid grid-3 reveal" id="successGrid"></div>
-    </div>
-  </section>
-
-  <section class="section" id="resources">
-    <div class="container">
-      <div class="section-header reveal">
-        <div>
-          <div class="section-kicker">
-            <i data-lucide="users"></i>
-            Resource Planning
-          </div>
-          <h2 class="section-title">Future team and operating model for scale.</h2>
-          <p class="section-desc">
-            Team expansion should align with content velocity, SEO scale, video production, paid performance, and lead management maturity.
-          </p>
-        </div>
-      </div>
-
-      <div class="resource-grid reveal">
-        <div class="card card-pad">
-          <div class="card-title-row">
-            <div>
-              <div class="card-title">Future Roles</div>
-              <div class="card-subtitle">Recommended hiring stack for Year 2–5 expansion.</div>
-            </div>
-          </div>
-          <div class="role-stack" id="roleStack"></div>
-        </div>
-
-        <div class="card card-pad">
-          <div class="card-title-row">
-            <div>
-              <div class="card-title">Operating Cadence</div>
-              <div class="card-subtitle">Governance rhythm to keep execution moving.</div>
-            </div>
-          </div>
-          <div class="resource-list" id="resourceList"></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="vision">
-    <div class="container">
-      <div class="vision-panel reveal">
-        <div class="vision-grid">
-          <div class="vision-copy">
-            <div class="section-kicker">
-              <i data-lucide="telescope"></i>
-              Future Vision
-            </div>
-            <h2>National Brand Status for Renewable Energy Solutions.</h2>
-            <p>
-              When people search for Solar EPC, Solar Installation, EV Charging Infrastructure, and Renewable Energy Solutions, UnderR∞t Energy appears as a recognized, trusted, and nationally visible brand.
-            </p>
-            <div class="hero-actions" style="margin-top: 26px; margin-bottom: 0;">
-              <a class="btn btn-primary" href="#roadmap">
-                <i data-lucide="arrow-up-right"></i>
-                Execute the Roadmap
-              </a>
-              <a class="btn" href="#kpis">
-                <i data-lucide="target"></i>
-                Track Success
-              </a>
-            </div>
-          </div>
-
-          <div class="vision-pill-grid">
-            <div class="vision-pill">
-              <i data-lucide="search-check"></i>
-              <strong>Strong Organic Traffic</strong>
-            </div>
-            <div class="vision-pill">
-              <i data-lucide="handshake"></i>
-              <strong>Consistent Qualified Leads</strong>
-            </div>
-            <div class="vision-pill">
-              <i data-lucide="landmark"></i>
-              <strong>Government Project Presence</strong>
-            </div>
-            <div class="vision-pill">
-              <i data-lucide="award"></i>
-              <strong>Industry Recognition</strong>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-</main>
-
-<div class="floating-actions">
-  <button class="float-btn" id="scrollTopBtn" type="button" aria-label="Scroll to top">
-    <i data-lucide="arrow-up"></i>
-  </button>
-</div>
-
-<footer class="footer">
-  <div class="container footer-inner">
-    <div>
-      <strong>UnderR∞t Energy Pvt. Ltd.</strong> — Infinite Energy. Sustainable Future.
-    </div>
-    <div>Master Roadmap Dashboard · Strategic Growth OS</div>
-  </div>
-</footer>
+    </footer>
 
 
   </div>
   <script src="assets/js/scripts.js"></script>
 </body>
+
 </html>
