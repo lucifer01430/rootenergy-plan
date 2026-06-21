@@ -1,0 +1,1041 @@
+
+    const phases = [
+      {
+        id: 0,
+        title: "Foundation",
+        status: "completed",
+        timeline: "0–3 Months",
+        duration: "Completed",
+        category: "Foundation",
+        progress: 100,
+        cost: "Completed",
+        risk: "Low",
+        goal: "Brand exists, digital infrastructure exists, and the company is ready for public launch.",
+        tasks: ["Logo", "Favicon", "Letterhead", "Visiting Card", "Company Profile", "Domain Setup", "VPS Setup", "Security Setup", "GitHub Integration"],
+        kpis: ["Brand Exists", "Digital Infrastructure Exists", "Ready For Public Launch"],
+        outcome: "Deployment foundation complete."
+      },
+      {
+        id: 1,
+        title: "Digital Identity",
+        status: "active",
+        timeline: "0–3 Months",
+        duration: "0–30 Days",
+        category: "Digital",
+        progress: 35,
+        cost: "₹0–₹2,000",
+        risk: "Low",
+        goal: "Establish digital existence across search, maps, and social discovery platforms.",
+        tasks: ["Google Business Profile", "Google Maps Verification", "LinkedIn Company Page", "Facebook Business Page", "Instagram Business Account", "YouTube Channel", "X Account", "Brand Presence"],
+        kpis: ["Brand search visibility", "Business profile approval", "Social profiles indexed"],
+        outcome: "The company becomes searchable, verifiable, and discoverable."
+      },
+      {
+        id: 2,
+        title: "Website Launch",
+        status: "active",
+        timeline: "0–3 Months",
+        duration: "Month 1",
+        category: "Website",
+        progress: 25,
+        cost: "₹0–₹10,000",
+        risk: "Medium",
+        goal: "Launch a fast, mobile-responsive, lead-generation-focused Next.js website.",
+        tasks: ["Next.js Website", "Mobile Responsive", "Fast Performance", "Lead Generation Focus", "Home", "About", "Services", "Solar", "EV Charging", "EPC", "Government Projects", "Projects", "Blog", "Contact"],
+        kpis: ["Website Live", "Core Web Vitals Pass"],
+        outcome: "Public website becomes the central digital conversion asset."
+      },
+      {
+        id: 3,
+        title: "Analytics Foundation",
+        status: "planned",
+        timeline: "0–3 Months",
+        duration: "Month 1",
+        category: "Analytics",
+        progress: 10,
+        cost: "₹0–₹3,000",
+        risk: "Low",
+        goal: "Install measurement systems for traffic, behavior, conversions, and campaign learning.",
+        tasks: ["Google Analytics 4", "Google Search Console", "Google Tag Manager", "Microsoft Clarity", "Meta Pixel"],
+        kpis: ["Visitor Tracking", "Conversion Tracking"],
+        outcome: "Every digital growth decision becomes measurable."
+      },
+      {
+        id: 4,
+        title: "SEO Foundation",
+        status: "planned",
+        timeline: "0–3 Months",
+        duration: "Month 1–2",
+        category: "SEO",
+        progress: 8,
+        cost: "₹0–₹5,000",
+        risk: "Medium",
+        goal: "Create the technical SEO base for indexing, search coverage, and structured trust.",
+        tasks: ["Sitemap", "Robots.txt", "Schema Markup", "Organization Schema", "Local Business Schema", "Service Schema", "Technical SEO", "Local SEO"],
+        kpis: ["Indexing", "Search Console Coverage"],
+        outcome: "Search engines can crawl, understand, and rank the brand assets."
+      },
+      {
+        id: 5,
+        title: "Local SEO Domination",
+        status: "planned",
+        timeline: "3–6 Months",
+        duration: "Month 2–12",
+        category: "SEO",
+        progress: 0,
+        cost: "₹15,000–₹75,000",
+        risk: "Medium",
+        goal: "Build city-level local search visibility and create 100+ local landing pages.",
+        tasks: ["Service Pages", "Solar Installation Delhi", "Solar Installation Mumbai", "Solar Installation Jaipur", "Solar Installation Lucknow", "City Pages", "State Pages"],
+        kpis: ["100+ Local Landing Pages", "Top rankings in target cities"],
+        outcome: "UnderR∞t Energy becomes visible in high-intent local searches."
+      },
+      {
+        id: 6,
+        title: "Content Engine",
+        status: "planned",
+        timeline: "3–6 Months",
+        duration: "Month 2–12",
+        category: "Content",
+        progress: 0,
+        cost: "₹25,000–₹1,50,000",
+        risk: "Medium",
+        goal: "Create educational depth around solar, EV charging, subsidies, industrial solar, and maintenance.",
+        tasks: ["Blog Strategy", "Solar Guides", "EV Guides", "Subsidy Programs", "Solar Cost Calculators", "Industrial Solar", "Maintenance", "Educational Content"],
+        kpis: ["100+ Articles", "Organic Traffic Growth"],
+        outcome: "Content becomes a compounding trust and traffic asset."
+      },
+      {
+        id: 7,
+        title: "Social Media Engine",
+        status: "planned",
+        timeline: "3–6 Months",
+        duration: "Month 2–12",
+        category: "Social",
+        progress: 0,
+        cost: "₹10,000–₹75,000",
+        risk: "Medium",
+        goal: "Develop a consistent social media engine across LinkedIn, Instagram, Facebook, and YouTube.",
+        tasks: ["LinkedIn", "Instagram", "Facebook", "YouTube", "Project Photos", "Project Videos", "Industry Updates", "Educational Posts", "Case Studies"],
+        kpis: ["3–5 Posts Per Week", "Audience Growth", "Engagement Rate"],
+        outcome: "Social proof and educational visibility support search and sales."
+      },
+      {
+        id: 8,
+        title: "Reputation Engine",
+        status: "planned",
+        timeline: "3–6 Months",
+        duration: "Month 3–12",
+        category: "Reputation",
+        progress: 0,
+        cost: "₹5,000–₹40,000",
+        risk: "Medium",
+        goal: "Collect reviews, feedback, video testimonials, and client success stories.",
+        tasks: ["Google Reviews Collection", "Customer Feedback", "Video Testimonials", "Client Success Stories", "Testimonials", "Customer Stories"],
+        kpis: ["100+ Reviews", "4.8+ Rating"],
+        outcome: "Public trust improves conversion and local search performance."
+      },
+      {
+        id: 9,
+        title: "Lead Generation System",
+        status: "planned",
+        timeline: "6–12 Months",
+        duration: "Month 4–12",
+        category: "Leads",
+        progress: 0,
+        cost: "₹10,000–₹90,000",
+        risk: "High",
+        goal: "Build high-converting funnels for consultations, WhatsApp leads, and site survey requests.",
+        tasks: ["Contact Forms", "WhatsApp Leads", "Free Consultation", "Site Survey Request", "Consultation Funnel"],
+        kpis: ["Qualified Leads", "Conversion Rate", "Cost per Lead"],
+        outcome: "Digital visibility converts into business pipeline."
+      },
+      {
+        id: 10,
+        title: "Authority Building",
+        status: "future",
+        timeline: "1–2 Years",
+        duration: "Year 1–2",
+        category: "Authority",
+        progress: 0,
+        cost: "₹30,000–₹2,00,000",
+        risk: "Medium",
+        goal: "Become a trusted industry resource through proof, education, and technical credibility.",
+        tasks: ["Case Studies", "Project Portfolio", "Client Testimonials", "Technical Whitepapers", "Industry Trust"],
+        kpis: ["Authority Content Published", "Portfolio Depth", "Lead Quality"],
+        outcome: "Sales conversations become easier because trust is pre-built."
+      },
+      {
+        id: 11,
+        title: "Video & YouTube SEO",
+        status: "future",
+        timeline: "1–2 Years",
+        duration: "Year 1–2",
+        category: "Content",
+        progress: 0,
+        cost: "₹25,000–₹2,50,000",
+        risk: "Medium",
+        goal: "Use video to explain solar, EV charging, subsidies, installation, and project execution.",
+        tasks: ["Solar Videos", "Project Tours", "Educational Content", "Solar Plant Tours", "Installation Walkthroughs", "EV Charging Guides", "Subsidy Explanations"],
+        kpis: ["YouTube Search Traffic", "Video Leads", "Subscriber Growth"],
+        outcome: "Video becomes a brand trust accelerator."
+      },
+      {
+        id: 12,
+        title: "PR & Media Presence",
+        status: "future",
+        timeline: "1–2 Years",
+        duration: "Year 1–3",
+        category: "Authority",
+        progress: 0,
+        cost: "₹40,000–₹3,00,000",
+        risk: "Medium",
+        goal: "Build public authority through press releases, interviews, founder features, and publications.",
+        tasks: ["Press Releases", "Industry Interviews", "Renewable Energy Publications", "Founder Features", "Publications"],
+        kpis: ["Brand Mentions", "Media Features", "Referral Traffic"],
+        outcome: "The brand becomes known beyond owned channels."
+      },
+      {
+        id: 13,
+        title: "Programmatic SEO",
+        status: "future",
+        timeline: "1–2 Years",
+        duration: "Year 1–3",
+        category: "SEO",
+        progress: 0,
+        cost: "₹75,000–₹5,00,000",
+        risk: "High",
+        goal: "Create 100–500 scalable SEO pages using city + service combinations.",
+        tasks: ["City + Service Pages", "Scale Content Engine", "100–500 Pages", "Solar Installation + City", "Solar EPC + City", "EV Charging + City"],
+        kpis: ["Massive Organic Reach", "Indexed Pages", "Ranking Footprint"],
+        outcome: "Search reach scales nationally through structured page systems."
+      },
+      {
+        id: 14,
+        title: "National SEO",
+        status: "future",
+        timeline: "2–5 Years",
+        duration: "Year 2–5",
+        category: "SEO",
+        progress: 0,
+        cost: "₹1,00,000–₹8,00,000",
+        risk: "High",
+        goal: "Rank for high-value national terms across solar installation, EPC, industrial solar, and EV infrastructure.",
+        tasks: ["Solar Installation India", "Solar EPC Company India", "Industrial Solar India", "EV Charging Infrastructure India", "Solar EPC India", "EV Infrastructure India"],
+        kpis: ["National Rankings", "Organic Revenue", "Share of Search"],
+        outcome: "The company competes for nationwide renewable energy demand."
+      },
+      {
+        id: 15,
+        title: "Marketing Automation",
+        status: "future",
+        timeline: "2–5 Years",
+        duration: "Year 2–5",
+        category: "Automation",
+        progress: 0,
+        cost: "₹50,000–₹4,00,000",
+        risk: "Medium",
+        goal: "Install CRM, email automation, lead nurturing, and follow-up workflows.",
+        tasks: ["CRM", "Email Automation", "Lead Nurturing", "Follow-Up Workflows", "Marketing Automation"],
+        kpis: ["Lead Response Time", "Nurture Conversion", "Sales Pipeline Health"],
+        outcome: "Leads are captured, nurtured, followed up, and converted with process discipline."
+      },
+      {
+        id: 16,
+        title: "Team Expansion",
+        status: "future",
+        timeline: "2–5 Years",
+        duration: "Year 2–5",
+        category: "Team",
+        progress: 0,
+        cost: "₹3,00,000–₹25,00,000/year",
+        risk: "Medium",
+        goal: "Build the internal team required to sustain SEO, content, video, social, paid performance, and sales growth.",
+        tasks: ["SEO Specialist", "Content Writer", "Video Editor", "Social Media Manager", "Performance Marketer", "Sales Manager"],
+        kpis: ["Publishing Velocity", "Lead Handling Capacity", "Campaign Execution Speed"],
+        outcome: "The brand can execute at national scale consistently."
+      },
+      {
+        id: 17,
+        title: "National Brand Status",
+        status: "future",
+        timeline: "2–5 Years",
+        duration: "3–5 Years",
+        category: "Brand",
+        progress: 0,
+        cost: "Strategic investment",
+        risk: "Medium",
+        goal: "Become one of India’s most trusted renewable energy brands.",
+        tasks: ["Solar EPC Recognition", "Solar Installation Recognition", "EV Charging Infrastructure Recognition", "Renewable Energy Solutions Recognition", "Government Project Presence", "Industry Recognition"],
+        kpis: ["Strong Organic Traffic", "Consistent Leads", "National Visibility", "Industry Recognition", "Government Project Presence", "Brand Search Growth"],
+        outcome: "UnderR∞t Energy appears as a recognized and trusted brand for renewable energy solutions."
+      }
+    ];
+
+    const timelineGroups = [
+      {
+        name: "0–3 Months",
+        description: "Foundation, identity, website, analytics, and technical SEO launch.",
+        phases: [0, 1, 2, 3, 4],
+        progress: 36
+      },
+      {
+        name: "3–6 Months",
+        description: "Local SEO, content engine, social engine, and review collection momentum.",
+        phases: [5, 6, 7, 8],
+        progress: 8
+      },
+      {
+        name: "6–12 Months",
+        description: "Lead-generation funnels and conversion systems turn visibility into pipeline.",
+        phases: [9],
+        progress: 0
+      },
+      {
+        name: "1–2 Years",
+        description: "Authority, YouTube SEO, PR, media, and programmatic SEO scale.",
+        phases: [10, 11, 12, 13],
+        progress: 0
+      },
+      {
+        name: "2–5 Years",
+        description: "National SEO, automation, team expansion, and national brand recognition.",
+        phases: [14, 15, 16, 17],
+        progress: 0
+      }
+    ];
+
+    const milestones = [
+      {
+        column: "Completed",
+        icon: "badge-check",
+        items: [
+          { title: "Brand Foundation Complete", desc: "Logo, favicon, company profile, stationery, and identity assets prepared." },
+          { title: "Infrastructure Ready", desc: "Domain, VPS, SSL, security, GitHub, and deployment foundation established." },
+          { title: "Public Launch Readiness", desc: "The company is ready to move from internal setup to public digital visibility." }
+        ]
+      },
+      {
+        column: "Now",
+        icon: "zap",
+        items: [
+          { title: "Digital Identity Activation", desc: "Create Google Business Profile, maps verification, and social channels." },
+          { title: "Website Launch Sprint", desc: "Publish the lead-generation website with core service and contact pages." },
+          { title: "Measurement Setup", desc: "Activate GA4, Search Console, GTM, Clarity, and conversion tracking." }
+        ]
+      },
+      {
+        column: "Next",
+        icon: "arrow-up-right",
+        items: [
+          { title: "Local SEO Rollout", desc: "Launch city, state, and service pages for solar installation and EPC demand." },
+          { title: "Content Engine Start", desc: "Publish solar guides, EV charging guides, subsidy content, and maintenance education." },
+          { title: "Reputation Flywheel", desc: "Collect Google reviews, customer stories, testimonials, and video proof." }
+        ]
+      },
+      {
+        column: "Future",
+        icon: "telescope",
+        items: [
+          { title: "Programmatic SEO Scale", desc: "Create 100–500 search pages using city + service page architecture." },
+          { title: "Automation & CRM", desc: "Build lead nurturing, follow-up workflows, and sales pipeline visibility." },
+          { title: "National Brand Status", desc: "Become recognized for Solar EPC, Solar Installation, EV Charging, and renewable energy solutions." }
+        ]
+      }
+    ];
+
+    const kpis = [
+      { name: "Website Live", target: "Month 1", priority: "Critical", progress: 25 },
+      { name: "Core Web Vitals", target: "Pass", priority: "High", progress: 20 },
+      { name: "Google Business Approval", target: "0–30 Days", priority: "Critical", progress: 35 },
+      { name: "Indexed Social Profiles", target: "All major platforms", priority: "High", progress: 30 },
+      { name: "Local Landing Pages", target: "100+", priority: "Critical", progress: 0 },
+      { name: "Educational Articles", target: "100+", priority: "High", progress: 0 },
+      { name: "Google Reviews", target: "100+ with 4.8+", priority: "High", progress: 0 },
+      { name: "Qualified Leads", target: "Consistent monthly growth", priority: "Critical", progress: 0 },
+      { name: "Programmatic SEO Pages", target: "100–500", priority: "Strategic", progress: 0 },
+      { name: "National Rankings", target: "Solar + EPC + EV terms", priority: "Strategic", progress: 0 }
+    ];
+
+    const investments = [
+      { title: "Digital Identity & Listings", amount: "₹0–₹2,000", desc: "Business profile, maps verification, core social presence, and brand discoverability." },
+      { title: "Website & Analytics Stack", amount: "₹0–₹13,000", desc: "Website launch, analytics, search console, tag manager, clarity, and conversion tracking." },
+      { title: "Local SEO & Content Engine", amount: "₹40,000–₹2,25,000", desc: "City pages, state pages, solar guides, EV guides, calculators, and educational content." },
+      { title: "Social, Reputation & Video", amount: "₹40,000–₹3,65,000", desc: "Social distribution, review collection, customer stories, testimonials, and YouTube SEO." },
+      { title: "Authority, PR & Programmatic SEO", amount: "₹1,45,000–₹10,00,000", desc: "Case studies, whitepapers, portfolio depth, media presence, and scalable SEO architecture." },
+      { title: "Automation, Team & National Scale", amount: "₹4,50,000+", desc: "CRM, automation, lead nurturing, national SEO, hiring, and brand-scale execution." }
+    ];
+
+    const risks = [
+      { title: "Inconsistent Content Velocity", level: "High", desc: "SEO and authority growth can stall without a weekly publishing system and owner." },
+      { title: "Weak Lead Follow-Up", level: "High", desc: "Traffic may not convert into revenue unless WhatsApp, forms, CRM, and sales response SLAs are disciplined." },
+      { title: "Delayed Review Collection", level: "Medium", desc: "Local SEO and conversion trust depend on consistent Google reviews and testimonials." },
+      { title: "Programmatic SEO Quality Risk", level: "High", desc: "City + service pages must be useful, unique, and technically clean to avoid low-quality scale." },
+      { title: "Founder Dependency", level: "Medium", desc: "Growth operations should transition from founder-led execution to role-based ownership." },
+      { title: "Brand Consistency Drift", level: "Low", desc: "Visual, verbal, and service positioning must stay consistent across web, social, sales, and PR." }
+    ];
+
+    const successes = [
+      { title: "Strong Organic Traffic", icon: "search-check", desc: "Search becomes a predictable source of renewable energy awareness and demand." },
+      { title: "Consistent Leads", icon: "handshake", desc: "Forms, WhatsApp, consultation funnels, and site survey requests generate qualified pipeline." },
+      { title: "National Visibility", icon: "globe-2", desc: "UnderR∞t Energy ranks and appears for national solar, EPC, EV, and renewable energy terms." },
+      { title: "Industry Recognition", icon: "award", desc: "Case studies, PR, publications, and client proof position the company as a credible authority." },
+      { title: "Government Project Presence", icon: "landmark", desc: "The brand becomes credible for institutional, EPC, and government project opportunities." },
+      { title: "Brand Search Growth", icon: "trending-up", desc: "More people search directly for UnderR∞t Energy as trust and visibility compound." }
+    ];
+
+    const roles = [
+      { title: "SEO Specialist", icon: "search", stage: "Year 2+" },
+      { title: "Content Writer", icon: "pen-tool", stage: "Year 2+" },
+      { title: "Video Editor", icon: "video", stage: "Year 2+" },
+      { title: "Social Media Manager", icon: "megaphone", stage: "Year 2+" },
+      { title: "Performance Marketer", icon: "target", stage: "Year 2–3" },
+      { title: "Sales Manager", icon: "briefcase-business", stage: "Year 2–3" }
+    ];
+
+    const resources = [
+      { title: "Weekly Growth Review", desc: "Review traffic, rankings, content output, leads, conversion rate, and blockers every week." },
+      { title: "Monthly Executive Roadmap Review", desc: "Update phase progress, investment decisions, KPI movements, and strategic priorities." },
+      { title: "Quarterly SEO & Content Audit", desc: "Review indexed pages, rankings, technical health, content quality, and local search visibility." },
+      { title: "Lead Governance SLA", desc: "Set response-time rules for calls, forms, WhatsApp leads, consultation requests, and site surveys." },
+      { title: "Brand Proof Repository", desc: "Maintain organized folders for project photos, videos, testimonials, case studies, and client stories." }
+    ];
+
+    let charts = {};
+    let currentGroup = "all";
+
+    const $ = (selector) => document.querySelector(selector);
+    const $$ = (selector) => Array.from(document.querySelectorAll(selector));
+
+    function icon(name, size = 16) {
+      return `<i data-lucide="${name}" style="width:${size}px;height:${size}px;"></i>`;
+    }
+
+    function getStatusIcon(status) {
+      if (status === "completed") return "check-circle-2";
+      if (status === "active") return "radio-tower";
+      if (status === "planned") return "calendar-clock";
+      return "sparkles";
+    }
+
+    function getRiskClass(risk) {
+      if (risk.toLowerCase() === "low") return "risk-low";
+      if (risk.toLowerCase() === "medium") return "risk-medium";
+      return "risk-high";
+    }
+
+    function getThemeColors() {
+      const styles = getComputedStyle(document.documentElement);
+      return {
+        text: styles.getPropertyValue("--text").trim(),
+        muted: styles.getPropertyValue("--text-muted").trim(),
+        border: styles.getPropertyValue("--border").trim(),
+        orange: styles.getPropertyValue("--orange").trim(),
+        green: styles.getPropertyValue("--green").trim(),
+        blue: styles.getPropertyValue("--blue").trim(),
+        purple: styles.getPropertyValue("--purple").trim(),
+        cyan: styles.getPropertyValue("--cyan").trim()
+      };
+    }
+
+    function renderStageBars() {
+      const el = $("#stageBars");
+      el.innerHTML = timelineGroups.map(group => `
+        <div class="stage-bar">
+          <div class="stage-bar-top">
+            <strong>${group.name}</strong>
+            <span>${group.progress}%</span>
+          </div>
+          <div class="progress-track">
+            <div class="progress-fill" style="--progress:${group.progress}%;"></div>
+          </div>
+        </div>
+      `).join("");
+    }
+
+    function renderTimelineVisual() {
+      const el = $("#timelineVisual");
+      el.innerHTML = timelineGroups.map(group => `
+        <div class="time-block">
+          <strong>${group.name}</strong>
+          <p>${group.description}</p>
+          <div class="phase-tags">
+            ${group.phases.map(id => `<span class="phase-tag">P${id}</span>`).join("")}
+          </div>
+        </div>
+      `).join("");
+    }
+
+    function renderTimelineSidebar() {
+      const el = $("#timelineSidebar");
+      const allCount = phases.length;
+      const blocks = [
+        {
+          name: "all",
+          label: "All Timelines",
+          count: allCount,
+          progress: 18
+        },
+        ...timelineGroups.map(group => ({
+          name: group.name,
+          label: group.name,
+          count: group.phases.length,
+          progress: group.progress
+        }))
+      ];
+
+      el.innerHTML = blocks.map(block => `
+        <button class="timeline-group ${currentGroup === block.name ? "active" : ""}" data-group="${block.name}" type="button">
+          <div class="timeline-group-top">
+            <div class="timeline-group-title">${block.label}</div>
+            <div class="timeline-count">${block.count} phases</div>
+          </div>
+          <div class="progress-track">
+            <div class="progress-fill" style="--progress:${block.progress}%;"></div>
+          </div>
+        </button>
+      `).join("");
+
+      $$(".timeline-group").forEach(button => {
+        button.addEventListener("click", () => {
+          currentGroup = button.dataset.group;
+          $("#timelineFilter").value = currentGroup === "all" ? "all" : currentGroup;
+          renderTimelineSidebar();
+          applyFilters();
+        });
+      });
+    }
+
+    function renderRoadmap() {
+      const el = $("#roadmapList");
+      el.innerHTML = phases.map(phase => `
+        <article
+          class="phase-card"
+          data-id="${phase.id}"
+          data-status="${phase.status}"
+          data-timeline="${phase.timeline}"
+          data-category="${phase.category}"
+          data-search="${[
+            phase.title,
+            phase.status,
+            phase.timeline,
+            phase.category,
+            phase.duration,
+            phase.cost,
+            phase.risk,
+            phase.goal,
+            phase.tasks.join(" "),
+            phase.kpis.join(" "),
+            phase.outcome
+          ].join(" ").toLowerCase()}"
+        >
+          <div class="phase-index">P${phase.id}</div>
+
+          <div class="phase-body ${phase.id === 0 || phase.id === 1 ? "open" : ""}">
+            <button class="phase-head" type="button" aria-expanded="${phase.id === 0 || phase.id === 1 ? "true" : "false"}">
+              <div>
+                <div class="phase-title-row">
+                  <h3 class="phase-title">Phase ${phase.id} — ${phase.title}</h3>
+                  <span class="badge ${phase.status}">
+                    ${icon(getStatusIcon(phase.status), 13)}
+                    ${phase.status}
+                  </span>
+                  <span class="badge ${getRiskClass(phase.risk)}">
+                    ${icon("shield", 13)}
+                    ${phase.risk} Risk
+                  </span>
+                </div>
+
+                <div class="phase-meta">
+                  <span>${icon("clock", 14)} ${phase.duration}</span>
+                  <span>${icon("calendar-range", 14)} ${phase.timeline}</span>
+                  <span>${icon("folder-kanban", 14)} ${phase.category}</span>
+                  <span>${icon("indian-rupee", 14)} ${phase.cost}</span>
+                </div>
+              </div>
+
+              <div class="phase-toggle">
+                ${icon("chevron-down", 18)}
+              </div>
+            </button>
+
+            <div class="phase-details">
+              <div class="phase-content">
+                <div>
+                  <div class="phase-progress-line">
+                    <div class="progress-track">
+                      <div class="progress-fill" style="--progress:${phase.progress}%;"></div>
+                    </div>
+                    <div class="phase-progress-value">${phase.progress}%</div>
+                  </div>
+                </div>
+
+                <div class="detail-grid">
+                  <div class="detail-box">
+                    <h4>${icon("target", 14)} Goal</h4>
+                    <p style="color: var(--text-soft); font-size: 13px; line-height: 1.55;">${phase.goal}</p>
+                  </div>
+
+                  <div class="detail-box">
+                    <h4>${icon("list-checks", 14)} Tasks</h4>
+                    <div class="chip-list">
+                      ${phase.tasks.map(task => `<span class="chip ${phase.status === "completed" ? "done" : ""}">${phase.status === "completed" ? icon("check", 12) : icon("circle", 10)} ${task}</span>`).join("")}
+                    </div>
+                  </div>
+
+                  <div class="detail-box">
+                    <h4>${icon("gauge", 14)} KPI</h4>
+                    <div class="chip-list">
+                      ${phase.kpis.map(kpi => `<span class="chip">${icon("bar-chart-3", 12)} ${kpi}</span>`).join("")}
+                    </div>
+                  </div>
+                </div>
+
+                <div class="detail-box">
+                  <h4>${icon("sparkles", 14)} Deployment Foundation Outcome</h4>
+                  <p style="color: var(--text-soft); font-size: 13px; line-height: 1.55;">${phase.outcome}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      `).join("");
+
+      $$(".phase-head").forEach(button => {
+        button.addEventListener("click", () => {
+          const body = button.closest(".phase-body");
+          const open = body.classList.toggle("open");
+          button.setAttribute("aria-expanded", String(open));
+        });
+      });
+    }
+
+    function applyFilters() {
+      const query = $("#searchInput").value.trim().toLowerCase();
+      const status = $("#statusFilter").value;
+      const timeline = $("#timelineFilter").value;
+      const category = $("#categoryFilter").value;
+      let visibleCount = 0;
+
+      currentGroup = timeline === "all" ? currentGroup : timeline;
+      if (timeline === "all" && currentGroup !== "all") {
+        currentGroup = "all";
+      }
+
+      $$(".phase-card").forEach(card => {
+        const matchesQuery = !query || card.dataset.search.includes(query);
+        const matchesStatus = status === "all" || card.dataset.status === status;
+        const matchesTimeline = timeline === "all" || card.dataset.timeline === timeline;
+        const matchesCategory = category === "all" || card.dataset.category === category;
+        const show = matchesQuery && matchesStatus && matchesTimeline && matchesCategory;
+
+        card.classList.toggle("hidden", !show);
+        if (show) visibleCount++;
+      });
+
+      $("#emptyState").classList.toggle("show", visibleCount === 0);
+      renderTimelineSidebar();
+      refreshIcons();
+    }
+
+    function renderMilestones() {
+      const el = $("#milestoneBoard");
+      el.innerHTML = milestones.map(column => `
+        <div class="milestone-column">
+          <h3>
+            <span style="display:inline-flex;align-items:center;gap:8px;">${icon(column.icon, 17)} ${column.column}</span>
+            <span class="badge planned">${column.items.length}</span>
+          </h3>
+          <div class="milestone-list">
+            ${column.items.map(item => `
+              <div class="milestone">
+                <strong>${item.title}</strong>
+                <span>${item.desc}</span>
+              </div>
+            `).join("")}
+          </div>
+        </div>
+      `).join("");
+    }
+
+    function renderKpis() {
+      const el = $("#kpiTableBody");
+      el.innerHTML = kpis.map(kpi => `
+        <tr>
+          <td><span class="kpi-name">${kpi.name}</span></td>
+          <td><span class="kpi-target">${kpi.target}</span></td>
+          <td><span class="badge ${kpi.priority === "Critical" ? "active" : kpi.priority === "Strategic" ? "future" : "planned"}">${kpi.priority}</span></td>
+          <td>
+            <div style="display:flex;align-items:center;gap:10px;">
+              <div class="spark"><span style="--w:${kpi.progress}%;"></span></div>
+              <strong style="font-size:12px;">${kpi.progress}%</strong>
+            </div>
+          </td>
+        </tr>
+      `).join("");
+    }
+
+    function renderInvestments() {
+      const el = $("#investmentList");
+      el.innerHTML = investments.map(item => `
+        <div class="investment-item">
+          <div class="investment-top">
+            <strong>${item.title}</strong>
+            <span class="investment-amount">${item.amount}</span>
+          </div>
+          <p>${item.desc}</p>
+        </div>
+      `).join("");
+    }
+
+    function renderRisks() {
+      const el = $("#riskList");
+      el.innerHTML = risks.map(item => `
+        <div class="risk-item">
+          <div class="risk-top">
+            <strong>${item.title}</strong>
+            <span class="badge ${getRiskClass(item.level)}">${item.level}</span>
+          </div>
+          <p>${item.desc}</p>
+        </div>
+      `).join("");
+    }
+
+    function renderSuccess() {
+      const el = $("#successGrid");
+      el.innerHTML = successes.map(item => `
+        <div class="card card-pad success-item">
+          <div class="success-top">
+            <strong style="display:flex;align-items:center;gap:10px;">${icon(item.icon, 20)} ${item.title}</strong>
+            <span class="badge completed">${icon("check", 13)} Target</span>
+          </div>
+          <p>${item.desc}</p>
+        </div>
+      `).join("");
+    }
+
+    function renderResources() {
+      $("#roleStack").innerHTML = roles.map(role => `
+        <div class="role-card">
+          ${icon(role.icon, 22)}
+          <div>
+            <strong>${role.title}</strong>
+            <span>${role.stage}</span>
+          </div>
+        </div>
+      `).join("");
+
+      $("#resourceList").innerHTML = resources.map(item => `
+        <div class="resource-item">
+          <div class="resource-top">
+            <strong>${item.title}</strong>
+            <span class="badge planned">${icon("repeat-2", 13)} Cadence</span>
+          </div>
+          <p>${item.desc}</p>
+        </div>
+      `).join("");
+    }
+
+    function destroyCharts() {
+      Object.values(charts).forEach(chart => chart.destroy());
+      charts = {};
+    }
+
+    function createCharts() {
+      destroyCharts();
+      const c = getThemeColors();
+
+      const commonOptions = {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: {
+            labels: {
+              color: c.muted,
+              boxWidth: 12,
+              boxHeight: 12,
+              usePointStyle: true,
+              padding: 18,
+              font: {
+                size: 12,
+                weight: "700"
+              }
+            }
+          },
+          tooltip: {
+            backgroundColor: "rgba(15, 23, 42, 0.92)",
+            titleColor: "#ffffff",
+            bodyColor: "#e2e8f0",
+            borderColor: "rgba(255,255,255,0.16)",
+            borderWidth: 1,
+            padding: 12,
+            cornerRadius: 12
+          }
+        },
+        scales: {
+          x: {
+            ticks: { color: c.muted, font: { weight: "700" } },
+            grid: { color: c.border }
+          },
+          y: {
+            ticks: { color: c.muted, font: { weight: "700" } },
+            grid: { color: c.border },
+            beginAtZero: true
+          }
+        }
+      };
+
+      charts.phaseChart = new Chart($("#phaseChart"), {
+        type: "bar",
+        data: {
+          labels: timelineGroups.map(group => group.name),
+          datasets: [
+            {
+              label: "Phases",
+              data: timelineGroups.map(group => group.phases.length),
+              borderRadius: 14,
+              backgroundColor: [
+                "rgba(245, 158, 11, 0.78)",
+                "rgba(34, 139, 34, 0.72)",
+                "rgba(59, 130, 246, 0.72)",
+                "rgba(139, 92, 246, 0.72)",
+                "rgba(6, 182, 212, 0.72)"
+              ],
+              borderColor: [
+                "rgba(245, 158, 11, 1)",
+                "rgba(34, 139, 34, 1)",
+                "rgba(59, 130, 246, 1)",
+                "rgba(139, 92, 246, 1)",
+                "rgba(6, 182, 212, 1)"
+              ],
+              borderWidth: 1
+            }
+          ]
+        },
+        options: {
+          ...commonOptions,
+          plugins: {
+            ...commonOptions.plugins,
+            legend: { display: false }
+          }
+        }
+      });
+
+      charts.readinessChart = new Chart($("#readinessChart"), {
+        type: "doughnut",
+        data: {
+          labels: ["Foundation", "Digital Launch", "SEO", "Content", "Leads", "Brand Scale"],
+          datasets: [
+            {
+              data: [100, 30, 8, 0, 0, 0],
+              backgroundColor: [
+                "rgba(16,185,129,0.82)",
+                "rgba(245,158,11,0.82)",
+                "rgba(59,130,246,0.76)",
+                "rgba(139,92,246,0.72)",
+                "rgba(6,182,212,0.72)",
+                "rgba(148,163,184,0.35)"
+              ],
+              borderColor: "rgba(255,255,255,0.12)",
+              borderWidth: 2,
+              hoverOffset: 8
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          cutout: "68%",
+          plugins: commonOptions.plugins
+        }
+      });
+
+      charts.kpiChart = new Chart($("#kpiChart"), {
+        type: "line",
+        data: {
+          labels: ["Now", "3M", "6M", "12M", "2Y", "5Y"],
+          datasets: [
+            {
+              label: "Brand Visibility",
+              data: [12, 28, 46, 68, 82, 94],
+              tension: 0.42,
+              fill: true,
+              borderColor: "rgba(245,158,11,1)",
+              backgroundColor: "rgba(245,158,11,0.12)",
+              pointBackgroundColor: "rgba(245,158,11,1)",
+              pointRadius: 4
+            },
+            {
+              label: "Lead Maturity",
+              data: [4, 12, 30, 58, 78, 92],
+              tension: 0.42,
+              fill: true,
+              borderColor: "rgba(34,139,34,1)",
+              backgroundColor: "rgba(34,139,34,0.1)",
+              pointBackgroundColor: "rgba(34,139,34,1)",
+              pointRadius: 4
+            }
+          ]
+        },
+        options: commonOptions
+      });
+
+      charts.investmentChart = new Chart($("#investmentChart"), {
+        type: "bar",
+        data: {
+          labels: ["0–3M", "3–6M", "6–12M", "1–2Y", "2–5Y"],
+          datasets: [
+            {
+              label: "Indicative Investment Index",
+              data: [1, 3, 4, 7, 10],
+              borderRadius: 14,
+              backgroundColor: "rgba(245, 158, 11, 0.76)",
+              borderColor: "rgba(245, 158, 11, 1)",
+              borderWidth: 1
+            },
+            {
+              label: "Operating Complexity Index",
+              data: [2, 4, 5, 8, 10],
+              borderRadius: 14,
+              backgroundColor: "rgba(34, 139, 34, 0.72)",
+              borderColor: "rgba(34, 139, 34, 1)",
+              borderWidth: 1
+            }
+          ]
+        },
+        options: commonOptions
+      });
+    }
+
+    function setupTheme() {
+      const saved = localStorage.getItem("underrut-theme");
+      if (saved) {
+        document.documentElement.setAttribute("data-theme", saved);
+      }
+
+      $("#themeToggle").addEventListener("click", () => {
+        const current = document.documentElement.getAttribute("data-theme");
+        const next = current === "dark" ? "light" : "dark";
+        document.documentElement.setAttribute("data-theme", next);
+        localStorage.setItem("underrut-theme", next);
+        createCharts();
+        refreshIcons();
+      });
+    }
+
+    function setupFilters() {
+      $("#searchInput").addEventListener("input", applyFilters);
+      $("#statusFilter").addEventListener("change", applyFilters);
+      $("#timelineFilter").addEventListener("change", applyFilters);
+      $("#categoryFilter").addEventListener("change", applyFilters);
+
+      $("#resetFiltersBtn").addEventListener("click", () => {
+        $("#searchInput").value = "";
+        $("#statusFilter").value = "all";
+        $("#timelineFilter").value = "all";
+        $("#categoryFilter").value = "all";
+        currentGroup = "all";
+        applyFilters();
+      });
+    }
+
+    function setupExpansionControls() {
+      $("#expandAllBtn").addEventListener("click", () => {
+        $$(".phase-body").forEach(body => body.classList.add("open"));
+        $$(".phase-head").forEach(head => head.setAttribute("aria-expanded", "true"));
+      });
+
+      $("#collapseAllBtn").addEventListener("click", () => {
+        $$(".phase-body").forEach(body => body.classList.remove("open"));
+        $$(".phase-head").forEach(head => head.setAttribute("aria-expanded", "false"));
+      });
+    }
+
+    function setupMobileMenu() {
+      const btn = $("#mobileMenuBtn");
+      const drawer = $("#mobileDrawer");
+
+      btn.addEventListener("click", () => {
+        drawer.classList.toggle("open");
+      });
+
+      drawer.querySelectorAll("a").forEach(link => {
+        link.addEventListener("click", () => drawer.classList.remove("open"));
+      });
+
+      document.addEventListener("click", event => {
+        if (!drawer.contains(event.target) && !btn.contains(event.target)) {
+          drawer.classList.remove("open");
+        }
+      });
+    }
+
+    function setupScrollSpy() {
+      const links = $$(".nav-link");
+      const sections = links.map(link => document.querySelector(link.getAttribute("href"))).filter(Boolean);
+
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            links.forEach(link => link.classList.remove("active"));
+            const active = links.find(link => link.getAttribute("href") === `#${entry.target.id}`);
+            if (active) active.classList.add("active");
+          }
+        });
+      }, { rootMargin: "-45% 0px -50% 0px", threshold: 0.01 });
+
+      sections.forEach(section => observer.observe(section));
+    }
+
+    function setupRevealAnimations() {
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12 });
+
+      $$(".reveal").forEach(el => observer.observe(el));
+    }
+
+    function setupScrollTop() {
+      $("#scrollTopBtn").addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    }
+
+    function refreshIcons() {
+      if (window.lucide) {
+        window.lucide.createIcons({
+          attrs: {
+            "stroke-width": 2.2
+          }
+        });
+      }
+    }
+
+    function init() {
+      setupTheme();
+      renderStageBars();
+      renderTimelineVisual();
+      renderTimelineSidebar();
+      renderRoadmap();
+      renderMilestones();
+      renderKpis();
+      renderInvestments();
+      renderRisks();
+      renderSuccess();
+      renderResources();
+      setupFilters();
+      setupExpansionControls();
+      setupMobileMenu();
+      setupScrollSpy();
+      setupRevealAnimations();
+      setupScrollTop();
+      createCharts();
+      refreshIcons();
+    }
+
+    document.addEventListener("DOMContentLoaded", init);
